@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkbox stylig I</title>
+<style type="text/css">
+<!-- Basic page styl  -->
+*{
+	font-family: Helvetica;
+	margin:0;
+	padding: 0;
+}
+.wrapper{
+	width: 80%;
+	margin:auto;
+	background-color: #ff5566;
+	position: relative;
+	top:1.5em;
+	padding: 2em;
+}
+
+.header{
+	color: #efefef;
+	border-bottom: solid 2px #ddd;
+}
+.header h1{
+	font-size: 36px;
+}
+.header h1 small{
+	font-size: 18px;
+	color: #ddd;
+}
+section{
+	margin-top: 1em;
+	background-color: #dfdfdf;
+	padding: 2em;
+}
+section h1{
+	margin-bottom:.4em;
+}
+.footer{
+	padding: .5em;
+	border-top:solid 1px #ddd;
+	position: relative;
+	margin-top: 1.5em;
+	color:#fff;
+	/*background-color: #ff4455;	*/
+}
+
+
+/* End Basic page styling*/
+
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="header">
+	<h1>Checkbox styling <small>By Sarath</small></h1>
+</div>
+	<section>
+		<h1>Checkbox styling I</h1>
+		<style type="text/css">
+		input[type=checkbox].css-checkbox {
+position: absolute; 
+overflow: hidden; 
+clip: rect(0 0 0 0); 
+height:1px; 
+width:1px; 
+margin:-1px; 
+padding:0;
+border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+padding-left:20px;
+height:15px; 
+display:inline-block;
+line-height:15px;
+background-repeat:no-repeat;
+background-position: 0 0;
+font-size:15px;
+vertical-align:middle;
+cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+background-position: 0 -15px;
+}
+
+.css-label{
+background-image:url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+}
+		</style>
+		<input id="demo_box_1" class="css-checkbox" type="checkbox" />
+<label for="demo_box_1" name="demo_lbl_1" class="css-label">Option #1</label>
+<!-- Checkbox powered by CssCheckbox.com -->
+
+<input id="demo_box_2" class="css-checkbox" type="checkbox" checked="checked" />
+<label for="demo_box_2" name="demo_lbl_2" class="css-label">Selected Option</label>
+<!-- Checkbox powered by CssCheckbox.com -->
+
+<input id="demo_box_3" class="css-checkbox" type="checkbox" />
+<label for="demo_box_3" name="demo_lbl_3" class="css-label">Option #3</label>
+<!-- Checkbox powered by CssCheckbox.com -->
+	</section>
+<div class="footer">
+	cc 2013 Sarath
+</div>
+</div><!--End wrapper  -->
+</body>
+</html>
