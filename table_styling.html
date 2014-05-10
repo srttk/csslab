@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Basic Table Styleing </title>
+</head>
+<style type="text/css">
+	table{
+		width: 500px;
+		/* Remove Default boreder gap  */
+		border-collapse: collapse;
+	}
+	th,td{
+		border:none;
+	}
+	th{
+		text-align: left;
+		background-color: #000;
+		color: #fff;
+	}
+	tr:nth-of-type(even){
+		background-color: #ddd;
+	}
+</style>
+<body>
+<table border="1">
+	<tr>
+		<th>Item</th>
+		<th>Price</th>
+		<th>Quantity</th>
+		<th>Total</th>
+	</tr>
+	<tr>
+		<td>Coffee</td><td>10 </td><td>5</td><td>50</td>
+	</tr>
+	<tr>
+		<td>Tea</td><td>20 </td><td>2</td><td>40</td>
+	</tr>
+	<tr>
+		<td colspan="3">Tax</td><td>10</td>
+	</tr>
+	<tr>
+		<td colspan="3">Total</td><td>100</td>
+	</tr>
+</table>
+</body>
+</html>

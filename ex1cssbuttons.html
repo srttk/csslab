@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ex1 CSS3 buttons</title>
+<style type="text/css">
+*{
+	margin: 0;
+}
+	button,input[type=button],input[type=submit],input[type=reset]{
+		font-family: bold 12px Helvetica, Arial, sans-serif;
+		padding: .5em 1em;
+		border-radius: .4em;
+		text-shadow: 0 1px 0 #fff;
+		background: #f3f3f3;
+		border: solid 1px #ddd;
+		cursor: pointer;
+    /*background: -webkit-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));*/
+
+    /*background: -moz-linear-gradient(linear,0% 40%,0% 70%,from(#F5F5F5),to(#F1F1F1));*/
+
+	}
+	button:hover,input[type=button]:hover,input[type=submit]:hover,input[type=reset]:hover{
+		color: #3e3e3e;
+    	border-color: #ccc;
+    	background-color: #f1f1f1;
+	}
+	button:active,input[type=button]:active,input[type=submit]:active,input[type=reset]:active{
+    color: #000;
+    background-color: #e1e1e1;
+    border-color: #444;
+	}
+
+	button.success{
+		background-color: #08AC5A;
+		color: #fff;
+
+	}
+	button.info{
+		background-color: #087AAC;
+		color: #fff;
+
+	}
+	button.danger{
+		background-color: #E76014;
+		color: #fff;
+
+	}
+	button.warning{
+		background-color: #E79621;
+		color:#fff;
+	}
+	input[type=text]{
+		font-family: bold 12px Helvetica, Arial, sans-serif;
+		background-color: #f3f3f3;
+		padding: .53em .3em;
+		border:solid 1px #ddd;
+		border-radius: .3em;
+	}
+	select{
+		width: 100px;
+		padding:.53em 1em;
+	    margin: 0;
+	    -webkit-border-radius:4px;
+	    -moz-border-radius:4px;
+	    border-radius:4px;
+	    /*-webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;*/
+	    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+	    box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+	    background: #f8f8f8;
+	    color:#888;
+	    border:none;
+	    outline:none;
+	    display: inline-block;
+	    -webkit-appearance:none;
+	    -moz-appearance:none;
+	    appearance:none;
+	    cursor:pointer;
+	}
+	label {position:relative}
+	label:after {
+	    content:'<>';
+	    font:11px "Consolas", monospace;
+	    color:#aaa;
+	    -webkit-transform:rotate(90deg);
+	    -moz-transform:rotate(90deg);
+	    -ms-transform:rotate(90deg);
+	    transform:rotate(90deg);
+	    right:8px; top:2px;
+	    padding:0 0 2px;
+	    border-bottom:1px solid #ddd;
+	    position:absolute;
+	    pointer-events:none;
+	}
+	label:before {
+	    content:'';
+	    right:6px; top:0px;
+	    width:20px; height:20px;
+	    background:#f8f8f8;
+	    position:absolute;
+	    pointer-events:none;
+	    display:block;
+	}
+	.alert{
+		background-color: #F8EDB6;
+		padding: .6em;
+		border-radius: 3px;
+		border:solid .1em #EBCCAC;
+		font-family: Helvetica;
+		color: #B27B67;
+	}
+	.alert.success{
+		background-color: #D7F5DB;
+		border: solid .1em #B6DFC1;
+		color: #1D7235;
+	}
+	.alert.error{
+		background-color: #F7CBC3;
+		border: solid .1em #EE9891;
+		color: #B36754;
+	}
+	.alert.info{
+		background-color: #C3E4F7;
+		border: solid .1em #8DCADD;
+		color: #127EA0;
+	}
+	/*Grid*/
+	.row{
+		margin-right: -15px;
+  		margin-left: -15px;
+  		min-height: 1px;
+	}
+	.row:before,
+	.row:after {
+	  display: table;
+	  content: " ";
+	}
+
+	.row:after {
+	  clear: both;
+	}
+	.col50{
+		width: 50%;
+		float: left;
+		background-color: #f66;
+	}
+	.col25{
+		width: 25%;
+		float: left;
+		background-color: #6F6;
+	}
+	.col10{
+		width: 10%;
+		float: left;
+		background-color: #66F;
+	}
+	.col15{
+		width: 15%;
+		float: left;
+		background-color: #665;
+	}
+	.offset50{
+		margin-left: 50%;
+	}
+</style>
+</head>
+<body>
+<h1>EX1 CSS Buttons</h1>
+<input type="text" />
+
+<label><select>
+	<option>One</option>
+	<option>One</option>
+	<option>One</option>
+
+</select></label>
+<select size="4">
+	<option>One</option>
+	<option>Two</option>
+</select>
+<select>
+	<option>One</option>
+	<option>One</option>
+	<option>One</option>
+	
+</select>
+<button>Hello</button>
+<input type="button" value="Hello World" />
+<button class="success">Hello</button>
+<button class="info">Info</button>
+<button class="danger">Danger</button>
+<button class="warning">Danger</button>
+<p class="alert">
+	<strong>Alert</strong> DFSDFSFSSFfdfdfdfjsjdfj
+</p>
+<p class="alert success">
+	<strong>Alert</strong> DFSDFSFSSFfdfdfdfjsjdfj
+</p>
+<p class="alert error">
+	<strong>Alert</strong> DFSDFSFSSFfdfdfdfjsjdfj
+</p>
+<p class="alert info">
+	<strong>Alert</strong> DFSDFSFSSFfdfdfdfjsjdfj
+</p>
+<h1>Grid</h1>
+<div class="row">
+	<div class="col50">
+		ss
+	</div>
+	<div class="col25">
+		dd
+	</div>
+	<div class="col15">
+		sds
+	</div>
+	<div class="col10">
+		dfd
+	</div>
+</div>
+<div class="row">
+	<div class="col50 offset50">
+		<div class="col25 offset50">
+			Welcome
+		</div>
+	</div>
+</div>
+</body>
+</html>
